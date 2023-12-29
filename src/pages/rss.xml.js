@@ -5,7 +5,7 @@ export async function GET(context) {
     title: "Daniel Zapata | Blog",
     description: "Mi viaje de aprendizaje de Astro",
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
+    items: await pagesGlobToRssItems(import.meta.glob("./**/*.mdx")),
     customData: `<language>es-pe</language>`,
   });
 }
